@@ -1,0 +1,32 @@
+{
+  "note": "These are all possible configuration options.",
+  "mainText": {
+    "font": "./WipEout-Fonts/WO3.ttf",
+    "fontSizeInREM": 5,
+    "leftMarginPercent": 30
+  },
+
+  "colorScheme": "simple_white",
+
+  "flavorText": {
+    "sizeREM": 0.5,
+    "font": "./WipEout-Fonts/2197 Block.ttf",
+    "textValue": "SAMPLE FLAVOR TEXT"
+  },
+
+  "clockDate": {
+    "showClock": true,
+    "showDate": true,
+    "font": "./WipEout-Fonts/X2.ttf",
+    "sizeREM": 0.5
+  },
+
+  "logo": {
+    "path": "./logos/curly.png",
+    "heightREM": 3
+  },
+
+  "background": {
+    "path": "./backgrounds/borodino.png"
+  }
+}

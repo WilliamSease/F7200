@@ -1,0 +1,15 @@
+.field {
+  margin-right: 1rem;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  outline: none;
+  all: unset;
+  width: 8rem;
+}
+
+.cell {
+  line-height: 1.25rem;
+}

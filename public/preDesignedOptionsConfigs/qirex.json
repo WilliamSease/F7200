@@ -1,0 +1,15 @@
+{
+  "mainText": {
+    "font": "./WipEout-Fonts/supErphoniX2.ttf",
+    "fontSizeInREM": 5,
+    "leftMarginPercent": 30
+  },
+
+  "colorScheme": "qirex",
+
+  "logo": {
+    "path": "./logos/qirex.svg",
+    "heightREM": 2
+  },
+  "note": "web-greeter --debug in terminal to quickly test your changes."
+}

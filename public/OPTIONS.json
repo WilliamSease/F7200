@@ -1,0 +1,34 @@
+{
+  "mainText": {
+    "font": "./WipEout-Fonts/WO3.ttf",
+    "fontSizeInREM": 5,
+    "leftMarginPercent": 30
+  },
+
+  "colorScheme": "Wo3",
+
+  "note": "web-greeter --debug in terminal to quickly test your changes.",
+  "note2": "remove these underscores to enable these features:",
+
+  "_flavorText": {
+    "sizeREM": 0.5,
+    "font": "./WipEout-Fonts/2197 Block.ttf",
+    "textValue": "SAMPLE FLAVOR TEXT"
+  },
+
+  "_clockDate": {
+    "showClock": true,
+    "showDate": true,
+    "font": "./WipEout-Fonts/X2.ttf",
+    "sizeREM": 0.5
+  },
+
+  "_logo": {
+    "path": "./logos/curly.png",
+    "heightREM": 3
+  },
+
+  "_background": {
+    "path": "./backgrounds/veneer.png"
+  }
+}

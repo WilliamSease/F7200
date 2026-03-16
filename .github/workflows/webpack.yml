@@ -1,0 +1,55 @@
+name: NodeJS with Webpack
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    strategy:
+      matrix:
+        node-version: [22.x]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Build
+        run: |
+          npm install
+          npm run build
+          npm run gen-colors
+
+      - name: 'Create tag'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git tag -f v0.${{ github.run_number }}
+          git push origin -f v0.${{ github.run_number }}
+
+      - name: Fetch tags
+        run: git fetch --tags
+
+      - name: Zip theme folder
+        run: zip -r F7200.zip F7200/
+
+      - name: 'Create Release'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v0.${{ github.run_number }}
+          files: F7200.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

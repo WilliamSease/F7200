@@ -1,0 +1,15 @@
+{
+  "mainText": {
+    "font": "./WipEout-Fonts/2197 Heavy.ttf",
+    "fontSizeInREM": 5,
+    "leftMarginPercent": 10
+  },
+
+  "colorScheme": "simple_white",
+
+  "background": {
+    "path": "./backgrounds/vermeer.jpg"
+  },
+
+  "note": "web-greeter --debug in terminal to quickly test your changes."
+}

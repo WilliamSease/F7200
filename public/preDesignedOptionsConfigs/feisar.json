@@ -1,0 +1,23 @@
+{
+  "mainText": {
+    "font": "./WipEout-Fonts/2197 Heavy.ttf",
+    "fontSizeInREM": 5,
+    "leftMarginPercent": 30
+  },
+
+  "colorScheme": "feisar",
+
+  "flavorText": {
+    "sizeREM": 0.5,
+    "font": "./WipEout-Fonts/X2.ttf",
+    "textValue": "the future is euro_"
+  },
+
+  "clockDate": {
+    "showClock": true,
+    "showDate": true,
+    "font": "./WipEout-Fonts/WO3.ttf",
+    "sizeREM": 0.5
+  },
+  "note": "web-greeter --debug in terminal to quickly test your changes."
+}

@@ -1,0 +1,77 @@
+{
+  "note": "you are encouraged to edit and add these directly.",
+  "colorSchemes": {
+    "simple_white": {
+      "background": "black",
+      "foreground": "white",
+      "hover": "lightgray",
+      "flavorText": "white",
+      "dateTime": "white",
+      "description": "Simple white on black."
+    },
+    "Wo3": {
+      "background": "#696157",
+      "foreground": "black",
+      "hover": "white",
+      "flavorText": "black",
+      "dateTime": "black",
+      "description": "WipeOut 3 title screen (beige) with black text."
+    },
+    "XL97": {
+      "background": "#00002e",
+      "foreground": "#f8f8f8",
+      "hover": "#f4b72d",
+      "flavorText": "#ba004d",
+      "dateTime": "#ba004d",
+      "description": "Wipeout XL/97 title Screen. White text on very dark blue."
+    },
+    "Wo1995": {
+      "background": "#364440",
+      "foreground": "#d5d5d8",
+      "hover": "white",
+      "flavorText": "#d5d5d8",
+      "dateTime": "#d5d5d8",
+      "description": "WipEout (1995) title screen. White text on cool grey."
+    },
+    "feisar": {
+      "background": "#e2dfc7",
+      "foreground": "#0079a0",
+      "hover": "#f5bb1b",
+      "flavorText": "#0079a0",
+      "dateTime": "#0079a0",
+      "description": "Feisar team color palette. Dark blue on eggshell."
+    },
+    "qirex": {
+      "background": "#ba31a0",
+      "foreground": "white",
+      "hover": "#4ebdf5",
+      "flavorText": "white",
+      "dateTime": "white",
+      "description": "Qirex team color palette. Bold white on purple."
+    },
+    "qirex-inverse": {
+      "background": "white",
+      "foreground": "#ba31a0",
+      "hover": "#4ebdf5",
+      "flavorText": "ba31a0",
+      "dateTime": "ba31a0",
+      "description": "Inverse of Qirex team color palette."
+    },
+    "curly": {
+      "background": "#FAF9F6",
+      "foreground": "#ea5d63",
+      "hover": "darkred",
+      "flavorText": "#ea5d63",
+      "dateTime": "#ea5d63",
+      "description": "Pink on off-white."
+    },
+    "agsystems": {
+      "background": "#83aac1",
+      "foreground": "#ced5de",
+      "hover": "white",
+      "flavorText": "white",
+      "dateTime": "white",
+      "description": "AG Systems team color palette. Musted grey on blue."
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mainText": {
+    "font": "./WipEout-Fonts/WO3.ttf",
+    "fontSizeInREM": 5,
+    "leftMarginPercent": 30
+  },
+
+  "colorScheme": "Wo3",
+  "note": "web-greeter --debug in terminal to quickly test your changes."
+}
