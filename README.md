@@ -12,7 +12,9 @@ Alternatively compile from src with npm/node.
 
 Edit `OPTIONS.json` and `colorSchemes.json` in the theme root before use to change fonts, colors.
 
-Examples of configurations you can achieve with `OPTIONS.json` (find these in `./preDesignOptionsConfigs`)
+Examples of configurations you can achieve with `OPTIONS.json` (find these in `./preDesignedOptionsConfigs`)
+
+References for the fonts and color schemes in `./public` (root of release)
 
 `feisar.json`
 
@@ -26,20 +28,6 @@ Examples of configurations you can achieve with `OPTIONS.json` (find these in `.
 
 ![qirex_example](./screenshots/qirex.png)
 
-References for the fonts and color schemes in `./public` (root of release)
-
-## features
-
-| user list | session select | power options | battery display
-
-optionally,
-
-| flavor text in the bottom left | a date/clock in the bottom right |
-
-| a logo in the bottom right | backgrounds |
-
-## additional configurations
-
 `agsystems.json`
 
 ![ag-systems-example](./screenshots/agsystems.png)
@@ -51,6 +39,16 @@ optionally,
 `vermeer.json`
 
 ![vermeer-example](./screenshots/vermeer.png)
+
+## features
+
+| user list | session select | power options | battery display
+
+optionally,
+
+| flavor text in the bottom left | a date/clock in the bottom right |
+
+| a logo in the bottom right | backgrounds |
 
 ## references
 
