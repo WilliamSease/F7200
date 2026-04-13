@@ -7,7 +7,7 @@ import { Utilities } from './Utilities'
 import { FlavorText } from './FlavorText'
 import { DateTime } from './DateTime'
 import { useValidateConfig } from './hooks/useValidateConfig'
-import { isNil } from 'lodash'
+import { cloneDeep, isNil } from 'lodash'
 import { Logo } from './Logo'
 import { clickableProps } from './accessability'
 
@@ -41,18 +41,20 @@ function App() {
     }
   }, [validation])
   const loginInvoke = useCallback(() => {
-    if (userName === null && nody.lightdm.has_guest_account) {
-      nody.lightdm.authenticate_as_guest()
-    } else {
-      if (userName === '') {
-        setValidation('nouser')
-      } else if (password === '') {
-        setValidation('nopass')
+    setTimeout(() => {
+      if (userName === null && nody.lightdm.has_guest_account) {
+        nody.lightdm.authenticate_as_guest()
       } else {
-        setState('firing')
-        nody.lightdm.authenticate(userName)
+        if (userName === '') {
+          setValidation('nouser')
+        } else if (password === '') {
+          setValidation('nopass')
+        } else {
+          setState('firing')
+          nody.lightdm.authenticate(userName)
+        }
       }
-    }
+    }, 100)
   }, [userName, password])
 
   const [session, setSessionState] = useState<string>(
@@ -73,15 +75,17 @@ function App() {
       } else {
         setUserName('')
         setPassword('')
-        usernameFieldRef.current?.focus()
         setState('fail')
-        setTimeout(() => setState('prep'), 500)
+        setTimeout(() => {
+          usernameFieldRef.current?.focus()
+          setState('prep')
+        }, 500)
 
         nody.lightdm.cancel_authentication()
       }
     })
     nody.lightdm.show_prompt.connect((_message, _type) => {
-      nody.lightdm.respond(passRef.current)
+      setTimeout(() => nody.lightdm.respond(cloneDeep(passRef.current)), 400)
     })
     setTimeout(() => usernameFieldRef.current?.focus(), 100)
   }, [])
